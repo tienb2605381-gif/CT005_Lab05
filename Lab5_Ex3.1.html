@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thông Tin Cá Nhân & Sản Phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+
+        /* Khung thông tin cá nhân */
+        .personal-info {
+            background-color: #e8f0fe;
+            border-left: 5px solid #1a73e8;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+
+        .personal-info p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #1a73e8;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Định dạng hình ảnh PNG Infographic */
+        .infographic-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Khung hiển thị PDF */
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Khung hiển thị video YouTube responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Tỷ lệ khung hình 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Trang Thông Tin Cá Nhân & Sản Phẩm</h1>
+
+        <!-- Phần thông tin cá nhân -->
+        <div class="personal-info">
+            <p><strong>Họ và tên:</strong> Phan Thị Thủy Tiên</p>
+            <p><strong>MSSV:</strong> b2605381</p>
+            <p><strong>Lớp:</strong> DI26D1A2</p>
+        </div>
+
+        <!-- Sản phẩm 1: File PNG / Infographic -->
+        <div class="section">
+            <h2>1. Sản phẩm Ảnh (PNG / Infographic)</h2>
+            <img class="infographic-img" src="https://lh3.googleusercontent.com/d/15kyBNXEA8zckkTtS4mc0kZ3NQYwD3cmQ"
+                alt="Lợi ích của công nghệ số trong học tập">
+        </div>
+
+        <!-- Sản phẩm 2: File PDF -->
+        <div class="section">
+            <h2>2. Sản phẩm Tài liệu (PDF)</h2>
+            <div class="pdf-container">
+                <!-- Chuyển link Drive sang định dạng preview để xem trực tiếp -->
+                <iframe src="https://drive.google.com/file/d/15kyBNXEA8zckkTtS4mc0kZ3NQYwD3cmQ/preview"></iframe>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 3: Video YouTube -->
+        <div class="section">
+            <h2>3. Sản phẩm Video (YouTube)</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/b7KLrPDS15A?si=yfBnqGSCAiMfa9PB" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
